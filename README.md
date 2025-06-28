@@ -110,15 +110,7 @@ docker run -d -p 3000:3000 --link redis:redis -e REDIS_URL=redis://redis:6379 bo
 
 # Run all tests
 
-npm test
-
-# Run tests in watch mode
-
-npm run test:watch
-
-# Run tests with coverage
-
-npm test -- --coverage
+npx jest --config=jest.config.js
 
 ### Test Coverage
 
